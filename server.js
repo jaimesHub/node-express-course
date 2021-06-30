@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 
 const app = express();
 // In order to make POST requests, first we need to include the "body-parser" library
-app.user(bodyParser.json());
+app.use(bodyParser.json());
 
 const mockUserData = [{ name: "Mark" }, { name: "Jill" }];
 
